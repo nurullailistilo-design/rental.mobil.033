@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f2f4f7;
+    color: #0c0c0c;
+}
+
+/* HEADER */
+
+header {
+    background: #123b63;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* ISI HALAMAN */
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.hero {
+    background: #dceeff;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* TOMBOL */
+
+.tombol {
+    display: inline-block;
+    background: orange;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* KATALOG */
+
+.mobil {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* FORM */
+
+.form {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* PESAN */
+
+#pesan {
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #123b63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* TAMPILAN PC */
+
+@media (min-width: 768px) {
+    .mobil {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

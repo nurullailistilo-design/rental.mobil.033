@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Penyewaan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h2>Rental Mobil 033</h2>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="katalog_033.html">Katalog</a>
+        <a href="form_sewa_033.html">Form Sewa</a>
+    </nav>
+</header>
+
+<main>
+    <section class="form">
+        <h1>Form Penyewaan Mobil</h1>
+
+        <form id="formSewa">
+
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama"
+                   placeholder="Nurul 033" required>
+
+            <label>Pilih Mobil</label>
+            <select id="mobil" required>
+                <option value="">Pilih Mobil</option>
+                <option value="Avanza">Avanza 033</option>
+                <option value="Innova">Innova 033</option>
+                <option value="Brio">Brio 033</option>
+            </select>
+
+            <label>Lama Sewa (Hari)</label>
+            <input type="number" id="lama"
+                   min="1" required>
+
+            <p id="pesan"></p>
+
+            <button type="submit" class="tombol">
+                Kirim
+            </button>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Rental Mobil 033 | 2026</p>
+</footer>
+
+</body>
+</html>
